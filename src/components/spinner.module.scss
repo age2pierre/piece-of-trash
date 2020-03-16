@@ -1,7 +1,9 @@
+@use '../theme.scss';
+
 .spinner {
   width: 40px;
   height: 40px;
-  background-color: #333;
+  background-color: theme.$white;
 
   margin: 100px auto;
   animation: sk-rotateplane 1.2s infinite ease-in-out;

@@ -1,0 +1,26 @@
+@use '../theme.scss';
+
+.circle {
+  z-index: 2;
+
+  svg {
+    circle {
+      cursor: -webkit-grab;
+      stroke-width: 2;
+      stroke: #000000;
+    }
+  }
+}
+
+.red-trash {
+  fill: theme.$red;
+}
+.blue-trash {
+  fill: theme.$blue;
+}
+.yellow-trash {
+  fill: theme.$yellow;
+}
+.green-trash {
+  fill: theme.$green;
+}

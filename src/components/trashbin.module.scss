@@ -1,0 +1,20 @@
+@use '../theme.scss';
+
+.bin-trash {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+.red-trash {
+  background-color: transparentize(theme.$red, 0.5);
+}
+.blue-trash {
+  background-color: transparentize(theme.$blue, 0.5);
+}
+.yellow-trash {
+  background-color: transparentize(theme.$yellow, 0.5);
+}
+.green-trash {
+  background-color: transparentize(theme.$green, 0.5);
+}
