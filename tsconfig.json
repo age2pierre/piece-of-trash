@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "declaration": true,
     "experimentalDecorators": true,
     "jsx": "react",
@@ -12,13 +13,20 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "paths": { "~*": ["./src/*"] },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "postCssOptions": {
+            "useConfig": true
+          }
+        }
+      }
+    ],
     "sourceMap": true,
     "strict": true,
-    "target": "es2019",
-    "baseUrl": ".",
-    "paths": {
-      "~*": ["./src/*"]
-    }
+    "target": "es2019"
   },
   "include": ["src/**/*"]
 }

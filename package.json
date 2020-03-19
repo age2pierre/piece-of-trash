@@ -22,14 +22,15 @@
     }
   },
   "lint-staged": {
+    "*.{json,scss,css,html,md,mdx}": [
+      "prettier --write"
+    ],
     "*.{ts,tsx,js,jsx}": [
-      "eslint --fix"
+      "eslint --fix",
+      "prettier --write"
     ],
     "package.json": [
       "sort-package-json"
-    ],
-    "*.{json,scss,css,html,md,mdx}": [
-      "prettier --write"
     ]
   },
   "browserslist": [
@@ -41,7 +42,6 @@
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-router-dom": "5.1.2",
-    "react-spring": "8.0.27",
     "utility-types": "3.10.0"
   },
   "devDependencies": {
@@ -54,18 +54,19 @@
     "autoprefixer": "9.7.4",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
-    "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.0",
     "husky": "4.2.3",
     "jest": "25.1.0",
     "lint-staged": "10.0.8",
     "parcel-bundler": "1.12.4",
     "parcel-plugin-bundle-visualiser": "1.2.0",
-    "parcel-plugin-static-files-copy": "2.3.1",
+    "postcss-modules": "1.5.0",
     "prettier": "1.19.1",
     "sass": "1.26.3",
     "sort-package-json": "1.40.0",
     "ts-jest": "25.2.1",
-    "typescript": "3.8.3"
+    "typescript": "3.8.3",
+    "typescript-plugin-css-modules": "2.2.0"
   }
 }

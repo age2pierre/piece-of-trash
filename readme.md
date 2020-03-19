@@ -2,12 +2,14 @@
 
 A simple opinionated boilerplate of how I like to setup my static react projects, including:
 
-- Parcel
-- Typescript
-- React/React-DOM
-- Prettier and ESlint
+- **Parcel** - as the asset bundler (fast, all included and zero config)
+- **Typescript** - because being explicit about types is important, configured to be _strict_.
+- **React/React-DOM**
+- **React Router**
+- **Prettier & ESlint** - configured to work together
 - VSCode Setup
-- Husky hooks to lint fix staged files only
+- Git hooks to lint/format staged files only
+- Jest - to run `**/*.test.{ts,tsx}` files
 
 ## Instalation
 
@@ -15,7 +17,10 @@ A simple opinionated boilerplate of how I like to setup my static react projects
 1. Run `npm start` to run dev server
 1. Hack away
 
-If you use VSCode it is a good idea to install [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) extensions.
+If you use VSCode it is a good idea to install
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode),
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+and [VSCode React Refactor](https://marketplace.visualstudio.com/items?itemName=planbcoding.vscode-react-refactor) extensions.
 
 ## Contribution
 

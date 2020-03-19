@@ -1,4 +1,4 @@
 import React from 'react'
-import './spinner.scss'
+import styles from './spinner.module.scss'
 
-export const Loading = () => <div className="spinner" />
+export const Loading = () => <div className={styles.spinner} />
