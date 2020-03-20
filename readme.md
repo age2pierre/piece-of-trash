@@ -1,3 +1,7 @@
+# Piece-of-trash
+
+Game is visible at [https://dreamy-benz-bc8e57.netlify.com/].
+
 # Parcel Typescript React
 
 A simple opinionated boilerplate of how I like to setup my static react projects, including:
