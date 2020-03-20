@@ -109,6 +109,7 @@ export const Main = () => {
     },
   )
 
+  // useInterval(() => dispatch({ type: 'ADD_NEW_CIRCLE' }), 3000)
   return (
     <>
       <Stage>
@@ -117,6 +118,8 @@ export const Main = () => {
             key={key}
             trashType={kind}
             onDrop={({ x, y }) => {
+              // lostBound={windowDim.height - BIN_HEIGHT}
+              // onLost={() => dispatch({ type: 'LOST_CIRCLE', key })}
               dispatch({
                 type: 'DROP_CIRCLE',
                 key,

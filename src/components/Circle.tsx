@@ -9,7 +9,9 @@ import styles from './circle.module.scss'
 
 export const Circle = (props: {
   trashType: TrashType
+  // lostBound: number
   onDrop: (e: { x: number; y: number }) => void
+  // onLost: () => void
 }) => {
   const [{ x, y }, set] = useSpring<{
     x: number
@@ -54,6 +56,11 @@ export const Circle = (props: {
       set({ y: pos.current - 40, x: -40 })
     }
     pos.current += delta * 0.05
+
+    // // circle reached the bottom
+    // if (pos.current >= props.lostBound) {
+    //   props.onLost()
+    // }
   })
 
   const className =
