@@ -7,7 +7,10 @@ import { exhaustiveCheck } from '../services/exhaustiveCheck'
 
 import styles from './circle.module.scss'
 
-export const Circle = (props: { trashType: TrashType }) => {
+export const Circle = (props: {
+  trashType: TrashType
+  onDrop: (e: { x: number; y: number }) => void
+}) => {
   const [{ x, y }, set] = useSpring<{
     x: number
     y: number
@@ -34,7 +37,7 @@ export const Circle = (props: { trashType: TrashType }) => {
 
     // check if mouse button was just released
     if (isDown === false && wasDown === true) {
-      console.log(`mouse released [${x},${y}]}`)
+      props.onDrop({ x, y })
     }
 
     // when dragging take control of the div target postion

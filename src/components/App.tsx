@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Loading } from './Loading'
 
-export const LandingPage = React.lazy(() => import('../pages/Main'))
+export const LandingPage = React.lazy(() => import('./Main'))
 
 export const App = () => (
   <BrowserRouter>
